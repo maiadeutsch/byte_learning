@@ -1,0 +1,158 @@
+
+<!doctype html>
+<html>
+<head>
+	<title>Byte Sized Learning</title>
+    <link rel="stylesheet" href="../../resources/jquery.mobile.structure-1.1.1.min.css" />
+	<link rel="stylesheet" href="../../resources/jquery.mobile.theme-1.1.1.min.css" />
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.css" />
+    <link rel="stylesheet" href="../../resources/style.css"></script>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Kreon' rel='stylesheet' type='text/css'>
+    <script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
+    <script src="../../resources/jquery.easing.1.3.js"></script>
+    <script src="../../resources/jqm.basic.carousel.js"></script>
+    <script>
+    $(function() {
+      window.scrollTo(0, 1); 
+      $('.carousel-wrapper').carousel();
+    });
+    </script>
+    <script src="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js"></script>
+	<script src="../../resources/lesson.js"></script>
+	<meta charset="utf-8">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+ 	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head> 
+<body> 
+	<div data-role="page" id="progress" data-theme="c" class="b-grade-browser">
+		<div data-role="header" data-theme="a">
+      <a href="index.html" data-rel="back" rel="external" data-icon="back">Back</a>
+			<h1>HTML Intermediate</h1>
+      <a href="../../index.html" rel="external" data-icon="search">Search</a>
+		</div>
+		<div id="content" class="main-content" data-iscroll data-role="content">
+     	<div class="carousel-wrapper">
+        <div class="carousel">
+        
+        <div id="slide-0" class="slide" >
+								<h4>1. Links and Images</h4>
+								<p>Okay, let's spice things up with links and images.</p> 
+								<p>Let's start by adding a link. Links are made with the &lt;i&gt; tag, the anchor tag.</p>
+								<p>Copy this into your body: &lt;a href="http://www.google.com"&gt;This is a link to Google!&lt;/a&gt;</p>
+								<p>Now you've added a link to the Google homepage to your website.</p>
+								</div>
+								
+								<div id="slide-1" class="slide" >
+								<h4>2. Attributes Galore</h4>
+								<p>However, the anchor tag is different from our previous tags.</p>
+								<p>It's the first tag we've seen with attributes!</p>
+								<p>The attribute here is called 'href', and its value is the URL that our link will take us to.</p>
+								</div>
+								
+								<div id="slide-2" class="slide" >
+								<h4>3. More on Attributes</h4>
+								<p>Many tags have attributes. Even the body tag can have added attributes.</p>
+								<p>For example replace your &lt;body&gt; tag with &lt;body bgcolor="red"&gt;</p>
+								<p>These days we use CSS for things involving color.</p>
+								<p>Next, let's add an image to our site</p>
+								</div>
+								
+								<div id="slide-3" class="slide" >
+								<h4>4. Adding Images</h4>
+								<img src="images/bunny.jpg" height="100" width="100" alt="Cute Bunny!" title="Cute Bunny!" />
+								<p>Cute, no? Copy the following code into your body section:</p>
+								<p>&lt;img src="images/bunny.jpg" height="100" width="100" alt="Cute Bunny!" title="Cute Bunny!" /&gt;</p>
+								</div>
+								
+								<div id="slide-4" class="slide" >
+								<h4>5. Where's the Image?</h4>
+								<p>Notice how it doesn't quite do what you want it to do?</p>
+								<p>That's because the source, or 'src', is pointing to an image in the 'images' folder called 'bunny.jpg'.</p>
+								<p>But that image doesn't exist on your computer!</p>
+								</div>
+								
+								<div id="slide-5" class="slide" >
+								<h4>6. Adding Your Image</h4>
+								<p>Go to the folder where you have your .html file.</p>
+								<p>Create a new folder there called 'images'.</p>
+								<p>Drag an image file into the new 'images' folder.</p>
+								</div>
+
+								
+								<div id="slide-6" class="slide" >
+								<h4>7. Ah, There's My Image!</h4>
+								<p>Look again at this code:</p>
+								<p>&lt;img src="images/bunny.jpg" height="100" width="100" alt="Cute Bunny!" title="Cute Bunny!" /&gt;</p>
+								<p>Replace 'images/bunny.jpg' with the name of your own image.</p>
+								<p>Now your image should work!</p> 
+								</div>
+								
+								<div id="slide-7" class="slide" >
+								<h4>8. More on Images</h4>
+								<p>There are a few more things to note in our image code:</p>
+								<p>&lt;img src="images/bunny.jpg" height="100" width="100" alt="Cute Bunny!" title="Cute Bunny!" /&gt;</p>
+								<p>Our code specifies the height and width of the image.</p>
+								<p>Otherwise, the image would just have its original dimensions.</p>
+								<p>The dimensions here are in pixels, little squares of color on your screen.</p>
+								</div>
+								
+								<div id="slide-8" class="slide" >
+								<h4>9. Alt and Title</h4>
+								<p>Secondly, you'll notice that we have attributes called 'alt' and 'title'.</p>
+								<p>That's the text that appears when you hover your mouse over the image.</p>
+								<p>Some browsers make the 'alt' text appear, others browsers make the 'title' text appear.</p>
+								<p>It's always safer to include both.</p>
+								</div>
+								
+								<div id="slide-9" class="slide" >
+								<h4>10. Image Files</h4>
+								<p>And finally, you'll notice that the image is a jpg, or jpeg.</p>
+								<p>The three most image file types you'll find on the internet are:</p>
+								<p>JPEG (.jpg), GIF (.gif), and PNG (.png)</p>
+								<p>These image files types are small and portable</p>
+								<p>You don't want your webpage to load slowly because of large files!</p>
+								</div>
+								
+								<div id="slide-10" class="slide" >
+								<h4>11. What's Next?</h4>
+								<p>Well onwards and upwards of course, your HTML journey is just beginning!</p>
+								<p>You have all the basics you need to move forward.</p>
+								<p>There are many, many tags that you can use in HTML.</p>
+								<p>Fortunately, it's just a matter of reading about them on the internet!</p>
+								</div>
+								
+								<div id="slide-11" class="slide" >
+								<h4>12. Using Resources</h4>
+								<p>Your best friend is going to be <a href="http://w3schools.com/">w3schools</a>.</p>
+								<p>The site contains a reference to every HTML tag you could ever ask for.</p>
+								<p>Before you know it, you'll be using &lt;table&gt;, &lt;div&gt;, and &lt;ul&gt; like a pro.</p>
+								<p>Next, check out our fantastic Byte-Sized CSS tutorials</p>
+								<p>Good luck on your journey!</p>
+								</div>
+        </div>
+        
+  <div data-role="footer" data-fullscreen="false" data-position="fixed">
+    	<div id="slider">
+        </div>
+        <div class="page">
+        </div>  
+        <div class="slider-button">
+        	<input type="range" name="slider-mini" id="slider-mini" value="1" min="1" max="5" data-highlight="true" style="display:none;" data-mini="true" 
+        	/>
+        </div>
+    </div> 
+    
+    </div>
+    
+    	<div id="slidericon">
+    	<< Slider >>
+    	</div>
+    	<div class="page" id="hidden">
+    	</div>
+	
+	</div>
+	</div>
+</body>
+</html>

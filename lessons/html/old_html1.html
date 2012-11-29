@@ -1,0 +1,121 @@
+
+<!doctype html>
+<html>
+<head>
+	<title>Lesson 1</title>
+  <link rel="stylesheet" href="../../resources/jquery.mobile.structure-1.1.1.min.css" />
+	<link rel="stylesheet" href="../../resources/jquery.mobile.theme-1.1.1.min.css" />
+	<link rel="stylesheet" href="../../resources/style.css" />
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head> 
+<body> 
+	<!-- Demo -->
+	<div data-role="page" id="progress" data-theme="a" class="b-grade-browser">
+		<div data-role="header" data-theme="b">
+			<h1>Introduction to HTML</h1>
+		</div>
+		<div id="content" class="main-content" data-iscroll data-role="content">
+						<div class="carousel-wrapper">
+							<div class="carousel">
+								<div id="slide-0" class="slide" >
+									<h4>1. What is HTML?</h4>
+									<p>Welcome to the Byte-Sized Lesson on HTML!</p>
+
+									<p>HTML stands for <u>H</u>yper<u>T</u>ext <u>M</u>arkup <u>L</u>anguage</p>
+									
+									<p>What is Hypertext? It's text… that's hyper! It's like regular text but it can do additional things, like link to other text, include images in the text, and do all of the things that you see on the Web.</p>
+									
+									<p>And what is a markup language? It's the language that turns regular text into hypertext by marking it up with tags!</p>
+									
+									<p>For example, here is some regular text: I'm regular text!<br />
+									Here is regular text that's marked up: &lt;b&gt;I'm regular text!&lt;/b&gt;<br />
+									And it comes out like this: <b>I'm regular text!</b></p>
+
+								</div>
+								<div id="slide-1" class="slide" >
+									<h4>2. What is HTML Good For?</h4>
+									<p>HTML is necessary for the internet. In the beginning, webpages were meant to be static pages that could be shared on the web. HTML provides all the tools necessary to make these static webpages.</p>
+									<p>However, static webpages weren't enough! People wanted webpages with content that was styled and positioned as they pleased! People wanted webpages that had functionality, that can really <i>do</i> things! And that's why today, along with HTML, we also have CSS and Javascript.</p>
+									<p>But, as useful as they are, CSS and Javascript are nothing without HTML, so it's important to have a good grasp of the basics before moving on to more complex webpages.</p>
+									<p>And so, let's learn a little bit about the basics.</p>
+								</div>
+								<div id="slide-2" class="slide" >
+									<h4>3. Anatomy of an HTML Web Page</h4>
+									<p> Take a look at this sample HTML page here: </p>
+									<p>&lt;html&gt;<br />
+									&lt;head&gt;<br />
+									&lt;/head&gt;<br />
+									&lt;body&gt;<br />
+									Hello, World!<br />
+									&lt;/body&gt;<br />
+									&lt;/html&gt;</p>
+									
+									<p>What's going on here? Well, this here is our first HTML page!</p> 
+									<p>Go ahead and copy this code into a simple text document, and save that text document as myFirstPage.html. Then, double click on that text file, and voila: your browser will open it as a web page! </p>
+									<p>If it didn't work right, then you might not have the best text editor for this purpose: I would recommend you use either <a href="http://notepad-plus-plus.org/">Notepad ++</a> for PC, or <a href="http://www.peterborgapps.com/smultron/">Smultron</a> for PC. </p>
+								</div>
+								<div id="slide-3" class="slide" >
+								<h4>4. Dissecting our HTML</h4>
+								<p> Let's take another look at our HTML code:</p>
+								<p>&lt;html&gt;<br />
+									&lt;head&gt;<br />
+									&lt;/head&gt;<br />
+									&lt;body&gt;<br />
+									Hello, World!<br />
+									&lt;/body&gt;<br />
+									&lt;/html&gt;</p>
+									
+								<p>HTML is centered around the idea of tags. Tags are the things inside of brackets that you see in the code.</p>
+								<p>Everything in our example is a tag, except for one little line of text: "Hello, World!". This is the only text that appears in our webpage.</p>
+								<p>Tags remain invisible. That's because tags are just instructions that are meant for the browser, not for the viewer.</p>
+								</div>
+								<div id="slide-4" class="slide" >
+								<h4>5. Tags EVERYWHERE!</h4>
+								<p> Let's take another look at our HTML code:</p>
+								<p>&lt;html&gt;<br />
+									&lt;head&gt;<br />
+									&lt;/head&gt;<br />
+									&lt;body&gt;<br />
+									Hello, World!<br />
+									&lt;/body&gt;<br />
+									&lt;/html&gt;</p>
+									
+								<p>Tags generally come in pairs: an opening tag, and a closing tag. The first tag in a pair is the opening tag, and the second tag is the closing tag.</p> 
+								<p>You can recognize a closing tag because it has a forward-slash. For example, &lt;body&gt; is an opening tag, and &lt;/body&gt; is a closing tag.</p>
+								<p>Everything in between the opening tag and the closing tag is considered to be inside that section of the code. Therefore, "Hello, World!" is inside of the body section, and the body section is inside of the HTML section. </p>
+								</div>
+								<div id="slide-5" class="slide" >
+								<h4>6. Go and see for yourself!</h4>
+								<p>In fact, everything is inside the HTML section! That's because every webpage always begins with an opening &lt;html&gt; tag and ends with a closing &lt;/html&gt; tag. Always.</p>
+								<p>Don't believe me? Well hey, you can check this out for yourself!</p>
+								<p>The easiest way to do this is using Google Chrome. Inside of Chrome, you can look at the code for any webpage by right-clicking anywhere on the page and selecting 'View Page Source'.</p>
+								<p>Oh, but just a word of warning: if you're new to HTML, you might be overwhelmed by what you see.</p>
+								<p>This is because an HTML page often contains inside of it confusing CSS and Javascript, and even pages that may seem simple at first (such as the Google homepage) are actually <i>extremely</i> sophisticated under the hood.</p>
+								<p>Webpages have become quite complex these days, but do not fear! With patience and perseverence, you'll learn how to navigate through the slush and identify the important things.</p>
+								<p>To dive deeper into the essentials, continue on to our second Byte-Sized HTML lesson. See you there!</p>
+								</div>
+								</div>
+						</div>
+		</div>
+	</div>
+	<!-- /Demo -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	<script src="../../resources/jquery.easing.1.3.js"></script>
+	<script src="../../resources/jqm.basic.carousel.js"></script>
+	<script>
+		(function($){
+			$(".carousel-wrappper").carousel();
+      $('#button').click(function() {
+        window.location.replace("index.html");
+      });
+      $('#new-search-button').click(function() {
+        window.location.replace('../../index.html');
+      });
+		})(jQuery);
+	</script>
+	<script src="http://code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.js"></script>
+</body>
+</html>
+
+

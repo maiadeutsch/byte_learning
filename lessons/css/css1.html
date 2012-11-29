@@ -1,0 +1,120 @@
+<!doctype html>
+<html>
+
+<head>
+	<title>Byte Sized Learning</title>
+    <link rel="stylesheet" href="../../resources/jquery.mobile.structure-1.1.1.min.css" />
+	<link rel="stylesheet" href="../../resources/jquery.mobile.theme-1.1.1.min.css" />
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.css" />
+    <link rel="stylesheet" href="../../resources/style.css"></script>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Kreon' rel='stylesheet' type='text/css'>
+	<meta charset="utf-8">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+ 	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head> 
+
+<body> 
+
+<div data-role="page" id="progress" data-theme="c" class="b-grade-browser">
+    <script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
+    <script src="../../resources/jquery.easing.1.3.js"></script>
+    <script src="../../resources/jqm.basic.carousel.js"></script>
+    <script>
+    $(function() {
+      $('.carousel-wrapper').carousel();
+    });
+    </script>
+    <script src="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js"></script>
+    <script src="../../resources/lesson.js"></script>
+	<div data-role="header" data-theme="a">
+	<a href="index.html" data-rel="back" rel="external" data-icon="back">Back
+	</a>
+		<h1>CSS Introduction
+		</h1>
+    <a href="../../index.html" rel="external" data-icon="search">Search
+    </a>
+	</div>
+		
+	<div id="content" class="main-content" data-iscroll data-role="content">
+    <div class="carousel-wrapper">
+    <div class="carousel" >
+    
+    <div id="slide-0" class="slide">
+        <h0>What is CSS?
+        </h0>
+        <img class="swipe" src="../../resources/images/swipe.png"/ width=80px >
+    </div>
+    
+    <div id="slide-1" class="slide">
+        <h4>What is CSS?
+        </h4>
+        <p> CSS stands for Cascading Style Sheets 
+        </p>
+		<p> Styles define how to display HTML elements 
+		</p>
+		<p> Styles were added to HTML 4.0 to solve a problem 
+		</p>
+		<p> External Style Sheets can save a lot of work. External Style Sheets are stored in CSS files 
+		</p>
+    </div>
+        
+    <div id="slide-2" class="slide" >
+		<h4>Styles solved a big problem
+		</h4>
+		<p> HTML was never intended to contain tags for formatting a document. 
+		</p>
+		<p> HTML was intended to define the content of a document, like:
+			<pre><code>
+&lt;h1&gt;This is a heading&lt;h1&gt;
+&lt;p&gt;This is a paragraph.&lt;p&gt;
+			</pre></code>
+		</p>
+	</div>
+	
+	<div id="slide-3" class="slide" >
+		<p> The development of large web sites, where fonts and color information were added to every single page, became a long and expensive process.
+		</p>
+		<p>	To solve this problem, the World Wide Web Consortium (W3C) created CSS.
+		</p>
+		<p>	In HTML 4.0, all formatting could be removed from the HTML document, and stored in a separate CSS file.
+		</p>
+		<p> All browsers support CSS today.
+		</p>
+	</div>
+		
+	<div id="slide-4" class="slide" >
+		<h4>CSS saves a lot of work!
+		</h4>
+		<p> CSS defines HOW HTML elements are to be displayed.
+		</p>
+		<p> Styles are normally saved in external .css files. External style sheets enable you to change the appearance and layout of all the pages in a Web site, just by editing one single file!
+		</p>
+	</div>
+		
+    </div>
+        
+	<div data-role="footer" data-fullscreen="false" data-position="fixed">
+    	<div id="slider">
+        </div>
+        <div class="page">
+        </div>  
+        <div class="slider-button">
+        	<input type="range" name="slider-mini" id="slider-mini" value="1" min="1" max="5" data-highlight="true" style="display:none;" data-mini="true" 
+        	/>
+        </div>
+    </div> 
+    
+    </div>
+    
+    	<div id="slidericon">
+    	<< Slider >>
+    	</div>
+    	<div class="page" id="hidden">
+    	</div>
+	
+	</div>
+	</div>	        
+</body>
+</html>

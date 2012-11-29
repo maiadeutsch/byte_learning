@@ -1,0 +1,102 @@
+
+<!doctype html>
+<html>
+<head>
+	<title>Byte Sized Learning</title>
+    <link rel="stylesheet" href="../../resources/jquery.mobile.structure-1.1.1.min.css" />
+	<link rel="stylesheet" href="../../resources/jquery.mobile.theme-1.1.1.min.css" />
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.css" />
+    <link rel="stylesheet" href="../../resources/style.css"></script>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Kreon' rel='stylesheet' type='text/css'>
+    <script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
+    <script src="../../resources/jquery.easing.1.3.js"></script>
+    <script src="../../resources/jqm.basic.carousel.js"></script>
+    <script>
+    $(function() {
+      window.scrollTo(0, 1); 
+      $('.carousel-wrapper').carousel();
+    });
+    </script>
+    <script src="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js"></script>
+	<script src="../../resources/lesson.js"></script>
+	<meta charset="utf-8">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+ 	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head> 
+<body> 
+	<div data-role="page" id="progress" data-theme="c" class="b-grade-browser">
+		<div data-role="header" data-theme="a">
+      <a href="index.html" data-rel="back" rel="external" data-icon="back">Back</a>
+			<h1>HTML Introduction</h1>
+      <a href="../../index.html" rel="external" data-icon="search">Search</a>
+		</div>
+		<div id="content" class="main-content" data-iscroll data-role="content">
+      <div class="carousel-wrapper">
+        <div class="carousel">
+        <div id="slide-0" class="slide" >
+			<h4>1. What is HTML?</h4>
+			<p>Welcome to the Byte-Sized Lesson on HTML!</p>
+			<p>HTML stands for <u>H</u>yper<u>T</u>ext <u>M</u>arkup <u>L</u>anguage</p>
+		</div>
+		
+		<div id="slide-1" class="slide" >
+			<h4>2. Hypertext?</h4>
+			<p>What is Hypertext? It's text… that's hyper! It's like regular text but it can do additional things, like link to other text, include images in the text, and do all of the things that you see on the Web.</p>
+		</div>
+		
+		<div id="slide-2" class="slide" >
+		<h4>3. Markup Language??</h4>
+		<p>And what is a markup language? It's the language that turns regular text into hypertext by marking it up with tags!</p>
+		<p>For example, here is some regular text: I'm regular text!<br />
+		Here is regular text that's marked up: &lt;b&gt;I'm regular text!&lt;/b&gt;<br />
+		And it comes out like this: <b>I'm regular text!</b></p>
+		</div>
+		
+		<div id="slide-3" class="slide" >
+		<h4>4. What is HTML Good For?</h4>
+		<p>HTML is necessary for the internet.</p>
+		<p>In the beginning, webpages were meant to be static pages that could be shared on the web.</p>
+		<p>HTML provides all the tools necessary to make these static webpages.</p>
+		</div>
+		
+		<div id="slide-4" class="slide" >
+		<h4>5. Static Webpages? Is that all?</h4>
+		<p>No, static webpages weren't enough!</p> 
+		<p>People wanted webpages with content that was styled and positioned as they pleased!</p>
+		<p>And that's why today, along with HTML, we also have CSS and Javascript.</p>
+		</div>
+		
+		<div id="slide-5" class="slide" >
+		<h4>6. And it all starts with HTML</h4>
+		<p>But, as useful as they are, CSS and Javascript are nothing without HTML</p>
+		<p>It's important to have a good grasp of the basics before moving on to more complex things.</p>
+		<p>And continue on to learn a little bit about the basics.</p>
+		</div>
+		
+		</div>
+		
+<div data-role="footer" data-fullscreen="false" data-position="fixed">
+    	<div id="slider">
+        </div>
+        <div class="page">
+        </div>  
+        <div class="slider-button">
+        	<input type="range" name="slider-mini" id="slider-mini" value="1" min="1" max="5" data-highlight="true" style="display:none;" data-mini="true" 
+        	/>
+        </div>
+    </div> 
+    
+    </div>
+    
+    	<div id="slidericon">
+    	<< Slider >>
+    	</div>
+    	<div class="page" id="hidden">
+    	</div>
+	
+	</div>
+	</div>
+</body>
+</html>

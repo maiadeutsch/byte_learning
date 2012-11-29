@@ -1,0 +1,116 @@
+
+<!doctype html>
+<html>
+<head>
+	<title>Byte Sized Learning</title>
+    <link rel="stylesheet" href="../../resources/jquery.mobile.structure-1.1.1.min.css" />
+	<link rel="stylesheet" href="../../resources/jquery.mobile.theme-1.1.1.min.css" />
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.css" />
+    <link rel="stylesheet" href="../../resources/style.css"></script>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Kreon' rel='stylesheet' type='text/css'>
+    <script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
+    <script src="../../resources/jquery.easing.1.3.js"></script>
+    <script src="../../resources/jqm.basic.carousel.js"></script>
+    <script>
+    $(function() {
+      window.scrollTo(0, 1); 
+      $('.carousel-wrapper').carousel();
+    });
+    </script>
+    <script src="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js"></script>
+	<script src="../../resources/lesson.js"></script>
+	<meta charset="utf-8">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+ 	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head> 
+<body> 
+	<div data-role="page" id="progress" data-theme="c" class="b-grade-browser">
+		<div data-role="header" data-theme="a">
+      <a href="index.html" data-rel="back" rel="external" data-icon="back">Back</a>
+			<h1>HTML 5</h1>
+      <a href="../../index.html" rel="external" data-icon="search">Search</a>
+		</div>
+		<div id="content" class="main-content" data-iscroll data-role="content">
+      <div class="carousel-wrapper">
+        <div class="carousel">
+        <div id="slide-0" class="slide">
+          <p>HTML 5 is becoming the new HTML standard and provides many new powerful features!</p>
+          <p>Swipe to learn more.</p>
+        </div>
+        <div id="slide-1" class="slide">
+          <h3>Embed Video</h3>
+          <p>One powerful feature is the ability to embed videos within the markup</p>
+          <div data-role="collapsible">
+            <h3>Example</h3>
+            <pre><code>
+&lt;video width="320" height="240" controls="controls"&gt;
+  &lt;source src="movie.mp4" type="video/mp4">&gt;
+  &lt;source src="movie.ogg" type="video/ogg"&gt;
+  &lt;source src="movie.webm" type="video/webm"&gt;
+&lt;/video&gt;
+            </code></pre>
+          </div>
+        </div>
+        <div id="slide-2" class="slide">
+          <h3>Embed Audio</h3>
+          <p>Another powerful feature is the ability to embed audio within the markup</p>
+          <div data-role="collapsible">
+            <h3>Example</h3>
+            <pre><code>
+&lt;audio controls="controls"&gt;
+  &lt;source src="horse.ogg" type="audio/ogg"&gt;
+  &lt;source src="horse.mp3" type="audio/mpeg"&gt;
+&lt;/audio&gt;
+            </code></pre>
+          </div>
+        </div>
+        <div id="slide-3" class="slide">
+          <h3>Draw Graphics</h3>
+          <p>Canvas allows a page to render graphics on the fly</p>
+          <div data-role="collapsible">
+            <h3>Example</h3>
+            <pre><code>
+&lt;canvas id="myCanvas" width="200" height="100"
+style="border:1px solid #000000;"&gt;
+&lt;/canvas&gt;
+            </code></pre>
+          </div>
+        </div>
+        <div id="slide-4" class="slide">
+          <h3>Geolocation</h3>
+          <p>HTML5 also allows a user to locate a person's location</p>
+          <div data-role="collapsible">
+            <h3>Example</h3>
+            <pre><code>
+function showPosition(position){
+  var latlon=position.coords.latitude+","+position.coords.longitude;
+}
+            </code></pre>
+          </div>
+        </div>
+        </div>
+  <div data-role="footer" data-fullscreen="false" data-position="fixed">
+    	<div id="slider">
+        </div>
+        <div class="page">
+        </div>  
+        <div class="slider-button">
+        	<input type="range" name="slider-mini" id="slider-mini" value="1" min="1" max="5" data-highlight="true" style="display:none;" data-mini="true" 
+        	/>
+        </div>
+    </div> 
+    
+    </div>
+    
+    	<div id="slidericon">
+    	<< Slider >>
+    	</div>
+    	<div class="page" id="hidden">
+    	</div>
+	
+	</div>
+	</div>
+</body>
+</html>

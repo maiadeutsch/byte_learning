@@ -1,0 +1,120 @@
+
+<!doctype html>
+<html>
+<head>
+	<title>Byte Sized Learning</title>
+    <link rel="stylesheet" href="../../resources/jquery.mobile.structure-1.1.1.min.css" />
+	<link rel="stylesheet" href="../../resources/jquery.mobile.theme-1.1.1.min.css" />
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.css" />
+    <link rel="stylesheet" href="../../resources/style.css"></script>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Kreon' rel='stylesheet' type='text/css'>
+    <script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
+    <script src="../../resources/jquery.easing.1.3.js"></script>
+    <script src="../../resources/jqm.basic.carousel.js"></script>
+    <script>
+    $(function() {
+      window.scrollTo(0, 1); 
+      $('.carousel-wrapper').carousel();
+    });
+    </script>
+    <script src="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js"></script>
+	<script src="../../resources/lesson.js"></script>
+	<meta charset="utf-8">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+ 	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head> 
+<body> 
+	<div data-role="page" id="progress" data-theme="c" class="b-grade-browser">
+		<div data-role="header" data-theme="a">
+      <a href="index.html" data-rel="back" rel="external" data-icon="back">Back</a>
+			<h1>HTML Basics 2</h1>
+      <a href="../../index.html" rel="external" data-icon="search">Search</a>
+		</div>
+		<div id="content" class="main-content" data-iscroll data-role="content">
+     	<div class="carousel-wrapper">
+        <div class="carousel">
+        
+        <div id="slide-0" class="slide" >
+								<h4>1. Under the Hood</h4>
+								<p>Now that we understand tags, here is the basic breakdown of any HTML page:</p>
+								<p>The entire page will be contained between an opening and a closing &lt;html&gt; tag.</p>
+								<p>The first section after the opening html tag is called the 'head' of the webpage</p>
+								</div>
+								
+								<div id="slide-1" class="slide" >
+								<h4>2. The Body!</h4>
+								<p>The section underneath the 'head' is called the 'body'.</p>
+								<p>Any content that's placed in the body will appear in the webpage.</p>
+								<p> Any content that's placed in the head of the webpage won't appear.</p>
+								</div>
+								
+								<div id="slide-2" class="slide" >
+								<h4>3. Back to The Head!</h4>
+								<p>The head is where you place all of the non-content.</p>
+								<p>This includes things like the author and title of the webpage.</p>
+								<p>This also includes any CSS and Javascript that you place in the head.</p>
+								</div>
+								
+								<div id="slide-3" class="slide" >
+								<h4>4. Spicing Up Our Head</h4>
+								<p>Try putting &lt;title&gt;My First Webpage&lt;/title&gt; in the head section.</p>
+								<p>Nothing will happen to the content of the webpage...</p>
+								<p>But the browser will now display the title of the webpage at the top of the page. Wow.</p> 
+								</div>
+								
+								<div id="slide-4" class="slide" >
+								<h4>5. <b>Working</b> the Body</h4>
+								<p>Now that we understand the head, let's enhance the body.</p>
+								<p>Enclose the Hello, World! in your webpage with a &lt;b&gt; tag.</p>
+								<p>It should look like this: &lt;b&gt;Hello, World!&lt;/b&gt;</p>
+								<p>Your text will now be <b>bold.</b></p>
+								</div>
+								
+								<div id="slide-5" class="slide" >
+								<h4>6. <i>Working</i> the Body</h4>
+								<p>The &lt;i&gt; tag makes text italicized, and &lt;u&gt; makes text underlined.</p>
+								<p>Now try writing multiple lines of text.</p>
+								<p>There's going to be a problem: HTML doesn't recognize line-breaks.</p>
+								<p>With HTML, to signify a new line you use the &lt;br /&gt; tag.</p>
+								</div>
+								
+								<div id="slide-6" class="slide" >	
+								<h4>7. Whitespace</h4>							
+								<p>The &lt;br /&gt; tag is unique in that it doesn't have a closing tag.</p> 
+								<p>It's one of the few tags that just stands on its own.</p>
+								<p>However, sometimes it's more convenient to use the &lt;p&gt; tag.</p>
+								</div>
+								
+								<div id="slide-7" class="slide" >
+								<h4>8. Paragraphs</h4>
+								<p>The paragraph tag needs to be closed with a &lt;/p&gt; closing paragraph tag.</p>
+								<p>The end of a paragraph will always have two line-breaks after it.
+								<p>All of the lines in this page are included in separate paragraph tags.</p>
+								</div>
+        </div>
+        
+  <div data-role="footer" data-fullscreen="false" data-position="fixed">
+    	<div id="slider">
+        </div>
+        <div class="page">
+        </div>  
+        <div class="slider-button">
+        	<input type="range" name="slider-mini" id="slider-mini" value="1" min="1" max="5" data-highlight="true" style="display:none;" data-mini="true" 
+        	/>
+        </div>
+    </div> 
+    
+    </div>
+    
+    	<div id="slidericon">
+    	<< Slider >>
+    	</div>
+    	<div class="page" id="hidden">
+    	</div>
+	
+	</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,118 @@
+
+<!doctype html>
+<html>
+<head>
+	<title>Lesson 2</title>
+  <link rel="stylesheet" href="../../resources/jquery.mobile.structure-1.1.1.min.css" />
+	<link rel="stylesheet" href="../../resources/jquery.mobile.theme-1.1.1.min.css" />
+	<link rel="stylesheet" href="../../resources/style.css" />
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head> 
+<body> 
+	<!-- Demo -->
+	<div data-role="page" id="progress" data-theme="a" class="b-grade-browser">
+		<div data-role="header" data-theme="b">
+			<h1>HTML Essentials</h1>
+		</div>
+		<div id="content" class="main-content" data-iscroll data-role="content">
+			<div class="mod carousel-demo">
+				<div class="inner">
+					<div class="hd">
+            <a href="#" id="new-search-button">New Search</a>
+             <br>
+            <a href="#" id="button">Back to Search Results</a>
+					</div>
+					<div class="bd">
+						<div class="carousel-wrapper">
+							<div class="carousel">
+								<div id="slide-0" class="slide" >
+								<h4>1. Under the Hood</h4>
+								<p>Now that we understand tags, here is the basic breakdown of any HTML page:</p>
+								<p>First, the entire page will be contained between an opening and a closing &lt;html&gt; tag.</p>
+								<p>Then, the first section after the opening html tag is called the 'head' of the webpage, and the section underneath it is called the 'body'.</p>
+								<p>Any content that's placed in the body will appear in the webpage. Any content that's placed in the head of the webpage won't appear.</p>
+								<p>That's because the head is where you place all of the non-content. This includes things like: information about the author of the webpage, the name of the webpage, and any CSS and Javascript that you might want to place in the head.</p>
+								<p>Try putting &lt;title&gt;My First Webpage&lt;/title&gt; in the head section of your webpage, and see what happens.</p>
+								<p>Nothing will happen to the content of the webpage, but you'll notice the browser will now display the title of the webpage at the top of the page. Wow.</p> 
+									</div>
+									<div id="slide-1" class="slide" >
+								<h4>2. Working the Body</h4>
+								<p>Now that we understand the head, let's enhance what we can do with the body.</p>
+								<p>Enclose the Hello, World! in your webpage with a &lt;b&gt; tag, so that it looks like this: &lt;b&gt;Hello, World!&lt;/b&gt; Your text will now be bold.</p>
+								<p>Similarly, the &lt;i&gt; tag makes the enclosed text italicized, and &lt;u&gt; makes your text underlined.</p>
+								<p>Now try writing multiple lines of text. There's going to be a problem: HTML doesn't recognize line-breaks. In a text editor like Microsoft Word, you can start a new line by hitting enter. With HTML, to signify a new line you use the &lt;br /&gt; tag.</p>
+								<p>The &lt;br /&gt; tag is unique in that it doesn't have a closing tag, it's one of the few tags that just stands on its own.</p>
+								<p>However, sometimes it's more convenient to use the &lt;p&gt; tag, or the 'paragraph' tag.</p>
+								<p>The paragraph tag needs to be closed with a &lt;/p&gt; closing paragraph tag. The end of a paragraph will always have two line-breaks after it. All of the lines in this page are included in separate paragraph tags.</p>
+								</div>
+								<div id="slide-2" class="slide" >
+								<h4>3. An Introduction to Attributes</h4>
+								<p>Okay, two last things we're going to add into our body: links and images.</p> 
+								<p>Let's start by adding a link. Links are made with the &lt;i&gt; tag, the anchor tag. Copy this into your body: &lt;a href="http://www.google.com"&gt;This is a link to Google!&lt;/a&gt;</p>
+								<p>Now you've added a link to the Google homepage to your website. However, as you can see, the anchor tag is different from our previous tags.</p>
+								<p>The anchor tag is the first tag we've seen with attributes. In this case, the attribute is called 'href', and its value is the URL that our link will take us to.</p>
+								<p>Many tags have attributes. Even the body tag can have added attributes; for example replace your &lt;body&gt; tag with &lt;body bgcolor="red"&gt; Now the background color, or 'bgcolor', of your webpage will be red! This isn't how we change background colors anymore, these days we use CSS for things that involve color.</p>
+								<p>Next, let's add an image to our site</p>
+								</div>
+								<div id="slide-3" class="slide" >
+								<h4>4. Adding Images</h4>
+								<img src="images/bunny.jpg" height="100" width="100" alt="Cute Bunny!" title="Cute Bunny!" />
+								<p>Cute, no? Copy the following code into your body section:</p>
+								<p>&lt;img src="images/bunny.jpg" height="100" width="100" alt="Cute Bunny!" title="Cute Bunny!" /&gt;</p>
+								<p>Notice how it doesn't quite do what you want it to do? That's because the source, or 'src', is pointing to an image in the 'images' folder called 'bunny.jpg', but that image doesn't exist on your computer!</p>
+								<p>To make the image appear, first right click on the image of the bunny here and save the image.</p>
+								<p>Then, go to the folder where you have your .html file, and create a new folder there called 'images'.</p>
+								<p>And finally, drag the 'bunny.jpg' file that you just saved into the new 'images' folder. Now your image should work.</p> 
+								</div>
+								<div id="slide-4" class="slide" >
+								<h4>5. More on Images</h4>
+								<img src="images/bunny.jpg" height="100" width="100" alt="Cute Bunny!" title="Cute Bunny!" />
+								<p>There are a few more things to note in our image code:</p>
+								<p>&lt;img src="images/bunny.jpg" height="100" width="100" alt="Cute Bunny!" title="Cute Bunny!" /&gt;</p>
+								<p>First of all, you'll notice that our code specifies the height and width of the image. If we didn't do that, the image would just have its original dimensions. The dimensions here are in pixels; that's the default unit of measurement in HTML.</p>
+								<p>Secondly, you'll notice that we have attributes called 'alt' and 'title'. That's the text that appears when you hover your mouse over the image.</p>
+								<p>Some browsers make the 'alt' text appear, and other browsers make the 'title' text appear, so it's always safer to include both.</p>
+								<p>And finally, you'll notice that the image is a jpg, or jpeg. The three most image file types you'll find on the internet are .jpg, .gif, and .png.</p>
+								<p>These image types are best for the internet because they are small and portable, and you don't want your webpage to load slowly.</p>
+								</div>
+								<div id="slide-5" class="slide" >
+								<h4>6. Where to now?</h4>
+								<p>Well onwards and upwards of course, your HTML journey is just beginning!</p>
+								<p>You have all the basics you need to move forward. There are many, many tags that you can use in HTML. Fortunately, it's just a matter of reading about them on the internet!</p>
+								<p>Your best friend is going to be <a href="http://w3schools.com/">w3schools</a>. The site contains a reference to every HTML tag you could ever ask for.</p>
+								<p>Before you know it, you'll be using &lt;table&gt;, &lt;div&gt;, and &lt;ul&gt; like a pro.</p>
+								<p>In the meantime, perhaps you'd like to make your website a little more visually appealing.</p>
+								<p>That's where CSS comes in handy. Check out our fantastic Byte-Sized CSS tutorials to continue on your web programming journey. Good luck!</p>								</div>
+							</div>
+						</div>
+					</div>
+					<div class="ft">
+						<nav class="carousel-position">
+							<span class="position"><em class="on">•</em><em>•</em><em>•</em></span>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- /Demo -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	<script src="../../resources/jquery.easing.1.3.js"></script>
+	<script src="../../resources/jqm.basic.carousel.js"></script>
+	<script>
+		(function($){
+			$(".carousel-wrappper").carousel();
+      $('#button').click(function() {
+        window.location.replace("index.html");
+      });
+      $('#new-search-button').click(function() {
+        window.location.replace('../../index.html');
+      });
+		})(jQuery);
+	</script>
+	<script src="http://code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.js"></script>
+</body>
+</html>
+
+
